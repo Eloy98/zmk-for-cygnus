@@ -86,12 +86,12 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LTQ";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick_tap_ms = <0>;
             flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
 
-            quick-tap-ms = <180>;
+            quick-tap-ms = <200>;
             global-quick-tap;
         };
     };
@@ -101,10 +101,10 @@
 
         default_layer {
             bindings = <
-&kp Q                    &kp W                        &kp E                     &kp R             &kp T  &kp Y                    &kp U              &kp I        &kp O            &kp P
-&hm LEFT_GUI A           &hm LEFT_ALT S               &hm LCTRL D               &hm LEFT_SHIFT F  &kp G  &kp H                    &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI
-&kp Z                    &kp X                        &kp C                     &kp V             &kp B  &kp N                    &kp M              &kp COMMA    &kp PERIOD       &kp FSLH
-                &kp TAB                  &lt 1 SPACE               &lt 2 ENTER                    &mo 3  &ltq 2 BACKSPACE  &mo 4
+&kp Q                    &kp W                        &kp E                     &kp R             &kp T  &kp Y                            &kp U              &kp I        &kp O            &kp P
+&hm LEFT_GUI A           &hm LEFT_ALT S               &hm LCTRL D               &hm LEFT_SHIFT F  &kp G  &kp H                            &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI
+&kp Z                    &kp X                        &kp C                     &kp V             &kp B  &kp N                            &kp M              &kp COMMA    &kp PERIOD       &kp FSLH
+                &kp TAB                  &lt 1 SPACE               &lt 2 ENTER                    &mo 3  &ltq 2 BACKSPACE  &kp BACKSPACE
             >;
         };
 
@@ -122,7 +122,7 @@
 &kp ESC               &kp KP_NUMBER_7          &kp KP_NUMBER_8          &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp HOME          &kp PAGE_UP     &kp UP    &kp PAGE_DOWN  &trans
 &kp CAPSLOCK          &kp KP_NUMBER_4          &kp KP_NUMBER_5          &kp KP_NUMBER_6  &kp AT           &kp END           &kp LEFT_ARROW  &kp DOWN  &kp RIGHT      &bootloader
 &kp DEL               &kp KP_N1                &kp KP_NUMBER_2          &kp KP_NUMBER_3  &kp DOT          &trans            &trans          &trans    &trans         &trans
-              &trans                   &trans                   &trans                   &trans           &trans    &trans
+              &trans                   &trans                   &trans                   &trans           &mo 4     &trans
             >;
         };
 
