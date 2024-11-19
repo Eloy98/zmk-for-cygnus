@@ -2,16 +2,20 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: kuolemax
-      url-base: https://github.com/kuolemax
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
+    - name: Eloy98                         # <--- add this
+      url-base: https://github.com/Eloy98     # <--- and this
   projects:
     - name: zmk
-      remote: kuolemax
-      revision: encoder-fix
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
-    # - name: zmk
-    #   remote: zmkfirmware
-    #   revision: main
-    #   import: app/west.yml
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
+    - name: prospector-zmk-module                 # <--- and these
+      remote: Eloy98                          # <---
+      revision: main    
   self:
     path: config

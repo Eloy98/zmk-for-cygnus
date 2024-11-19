@@ -14,8 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: cygnus_left
+    shield: cygnus_left  prospector_adapter
   - board: nice_nano_v2
-    shield: cygnus_right
+    shield: cygnus_right rgbled_adapter
   - board: nice_nano_v2
     shield: settings_reset
